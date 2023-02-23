@@ -25,14 +25,11 @@ Sed finibus ipsum libero, ac lobortis neque dignissim eu. Nunc lobortis mi sit a
 
 <h2 class="text-center mt-2 mb-4">Open Positions</h2>
     <div class="container">
-        <div class="row">
-        <div class="col-md-10">
-            <p>Show Job here</p>
-        </div>
-        <div class="col-md-2 justify-content-end">
-            <button class="btn btn-primary">Apply</button>
-        </div>
-        </div>
+
+            {% for job in jobs %}
+            {% include 'job-card.html' %}
+            {% endfor %}
+
     </div>
 
 <div class="container text-center">
